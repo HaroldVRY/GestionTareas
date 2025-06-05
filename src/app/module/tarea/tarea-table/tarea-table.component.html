@@ -1,0 +1,47 @@
+<h2 class="titulo">Lista Tareas</h2>
+
+
+<div class="card p-fluid" style="max-width: 500px; margin-bottom: 2rem;">
+  <div class="p-inputgroup">
+    <input type="text" pInputText placeholder="Nueva tarea" [(ngModel)]="nuevaTarea" />
+    <button pButton type="button" label="Agregar" icon="pi pi-plus" (click)="agregarTarea()"></button>
+  </div>
+</div>
+
+<div class="mb-4 p-8 flex items-center justify-center">
+  <p-card
+  display
+  [style]="{ width: '25rem', overflow: 'hidden' }"
+  *ngFor="let tarea of tareas"
+  class="custom-card mb-4"
+>
+  <ng-template pTemplate="header">
+    <img
+      alt="Imagen"
+      class="custom-card-image"
+      src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png"
+      style="display: block; margin: 0 auto; width: 50%;"
+    />
+  </ng-template>
+
+  <ng-template pTemplate="title">
+    Tarea #{{ tarea.id }}
+  </ng-template>
+
+  <ng-template pTemplate="subtitle">
+    {{ tarea.tarea }}
+  </ng-template>
+
+  <p>{{ tarea.completado ? 'Completada' : 'Pendiente' }}</p>
+
+  <ng-template pTemplate="footer">
+  <div class="w-full flex justify-center gap-4 mt-3">
+    <app-tarea-item
+      [tarea]="tarea"
+      (completar)="onCompletarTarea($event)"
+      (eliminar)="onEliminarTarea($event)">
+    </app-tarea-item>
+  </div>
+</ng-template>
+</p-card>
+</div>

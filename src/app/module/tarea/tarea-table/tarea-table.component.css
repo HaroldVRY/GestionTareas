@@ -1,0 +1,12 @@
+.titulo {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.custom-card-image {
+  width: 60%;             /* Que no se desborde horizontalmente */
+  height: 230px;           /* 👈 Este es el valor que puedes AJUSTAR A TU GUSTO */
+  object-fit: cover;       /* Recorta proporcionalmente sin deformar */
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}

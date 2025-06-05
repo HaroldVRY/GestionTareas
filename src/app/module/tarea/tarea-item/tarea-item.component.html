@@ -1,0 +1,25 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body" style="border: none; padding: 0;">
+    <div class="d-flex justify-content-between align-items-center gap-2">
+      <!-- Botón Completar -->
+      <button
+        pButton
+        type="button"
+        [label]="tarea.completado ? 'Completado' : 'Completar'"
+        icon="pi pi-check"
+        [disabled]="tarea.completado"
+        class="p-button-success"
+        (click)="onCompletar()"
+      ></button>
+
+      <!-- Botón Eliminar -->
+      <button
+        pButton
+        type="button"
+        icon="pi pi-trash"
+        class="p-button-danger"
+        (click)="onEliminar()"
+      ></button>
+    </div>
+  </div>
+</div>

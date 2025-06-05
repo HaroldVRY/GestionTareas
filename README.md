@@ -1,64 +1,31 @@
-<<<<<<< HEAD
-# Proyectoangular1
+# Aplicación de Gestión de Tareas en Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.14.
+Bienvenido al repositorio de la **Aplicación de Gestión de Tareas**. Esta aplicación web está construida con **Angular**, y permite a los usuarios crear, gestionar y seguir el progreso de sus tareas de forma sencilla y eficiente.
 
-## Development server
+## Características
 
-To start a local development server, run:
+- **Gestión de Tareas**: Los usuarios pueden agregar, editar y eliminar tareas.
+- **Interfaz de Usuario Interactiva**: Construida con Angular y Material Design para una experiencia de usuario fluida y moderna.
+- **Autenticación de Usuario**: Inicia sesión y crea una cuenta para gestionar tus tareas.
+- **Filtros y Búsqueda**: Filtra tareas por estado y búsqueda por nombre o descripción.
+- **Notificaciones**: Recibe alertas cuando se añaden tareas nuevas o cuando se actualizan tus tareas.
 
-```bash
-ng serve
-```
+## Tecnologías Utilizadas
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Angular**: Framework principal para el desarrollo de la aplicación frontend.
+- **Angular Material**: Componentes UI modernos y responsivos.
+- **RxJS**: Manejo eficiente de flujos de datos y eventos.
+- **TypeScript**: Lenguaje de programación que mejora la experiencia de desarrollo con tipado estático.
+- **Node.js** (en caso de que tengas un backend): Backend para gestionar la autenticación, tareas y más.
 
-## Code scaffolding
+## Instalación
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Para ejecutar la aplicación en tu máquina local, sigue estos pasos:
 
-```bash
-ng generate component component-name
-```
+### Prerequisitos
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Asegúrate de tener **Node.js** y **Angular CLI** instalados en tu máquina. Si no los tienes, puedes descargarlos e instalarlos desde:
 
-```bash
-ng generate --help
-```
+- [Node.js](https://nodejs.org/)
+- [Angular CLI](https://angular.io/cli)
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# GestionTareas
-Gestor de tareas
->>>>>>> 2a5581fdb9bcd1c42b975a5eaab15cb7759b8ea1

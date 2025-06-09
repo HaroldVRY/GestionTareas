@@ -15,7 +15,9 @@ import { CardModule } from 'primeng/card';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeng/themes/aura';
-
+import { AvatarModule } from 'primeng/avatar';
+import { ToolbarModule } from 'primeng/toolbar';
+import { PrimeIcons } from 'primeng/api';
 
 
 
@@ -33,7 +35,9 @@ import Aura from '@primeng/themes/aura';
     TableModule,
     InputTextModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    AvatarModule,
+    ToolbarModule
   ],
   providers: [
     provideAnimationsAsync(),

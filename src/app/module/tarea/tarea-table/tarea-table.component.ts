@@ -5,7 +5,7 @@ import { TareaInterface } from '../../../interface/tarea-interface';
   selector: 'app-tarea-table',
   standalone: false,
   templateUrl: './tarea-table.component.html',
-  styleUrl: './tarea-table.component.css'
+  styleUrl: './tarea-table.component.css',
 })
 export class TareaTableComponent {
   tareas: TareaInterface[] = [];

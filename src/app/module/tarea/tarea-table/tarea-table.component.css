@@ -10,3 +10,9 @@
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
 }
+
+.img {
+  display: block; /* Elimina los márgenes por defecto en imágenes */
+  margin:  15px 0px 10px 120px;  /* Top Right Bottom Left */
+  width: 50%;
+}

@@ -18,6 +18,10 @@ import Aura from '@primeng/themes/aura';
 import { AvatarModule } from 'primeng/avatar';
 import { ToolbarModule } from 'primeng/toolbar';
 import { PrimeIcons } from 'primeng/api';
+import { SidebarComponent } from './core/components/sidebar/sidebar.component';
+import { DescriptionComponent } from './module/sobre-mi/components/description/description.component';
+import { ProyectCardsComponent } from './module/proyectos/components/proyect-cards/proyect-cards.component';
+import { ArbolHabilidadesComponent } from './module/habilidades/components/arbol-habilidades/arbol-habilidades.component';
 
 
 
@@ -37,7 +41,7 @@ import { PrimeIcons } from 'primeng/api';
     ButtonModule,
     CardModule,
     AvatarModule,
-    ToolbarModule
+    ToolbarModule,
   ],
   providers: [
     provideAnimationsAsync(),

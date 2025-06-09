@@ -1,4 +1,35 @@
 <br>
+  <div class="d-flex position absolute  fixed-top" style="width: 100%; margin-bottom: 2rem;">
+  <p-toolbar [style]="{ 'border-radius': '3rem','margin-left': '20px', 'margin-top': '20px','padding': '1rem 1rem 1rem 1.5rem', 'width': '210%' }">
+    <ng-template #start>
+      <div class="d-flex items-center gap-2" style="flex-grow: 1;">
+        <!-- Íconos y Botones sin acción -->
+        <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 2rem; margin-right: 1rem">
+          <path d="..." fill="var(--p-primary-color: #007bff)" />
+          <mask id="mask0_1_52" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="31" height="33"></mask>
+        </svg>
+        <!-- Botones sin acción -->
+        <p-button label="Sobre mí" text plain></p-button>
+        <p-button label="Proyectos" text plain></p-button>
+        <p-button label="Habilidades" text plain></p-button>
+        <p-button label="Educación" text plain></p-button>
+        <p-button label="Experiencia" text plain></p-button>
+        <p-button label="Contáctame" text plain></p-button>
+      </div>
+    </ng-template>
+
+
+
+    <ng-template #end>
+      <div class="d-flex items-center gap-2">
+        <!-- Botón sin acción -->
+        <p-button label="Share" severity="contrast" size="small"></p-button>
+        <!-- Avatar sin acción -->
+        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" [style]="{ width: '32px', height: '32px' }"></p-avatar>
+      </div>
+    </ng-template>
+  </p-toolbar>
+</div>
 
 <div class="d-flex justify-content-center align-items-center" style="margin-top: 10vh;">
   <div class="d-flex flex-column w-100"  class="custom-card mb-4" >

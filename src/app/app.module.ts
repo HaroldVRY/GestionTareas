@@ -25,11 +25,12 @@ import { ArbolHabilidadesComponent } from './module/habilidades/components/arbol
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     TareaTableComponent,
-    TareaItemComponent
+    TareaItemComponent,
   ],
   imports: [
     BrowserModule,

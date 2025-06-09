@@ -18,6 +18,18 @@ const routes: Routes = [
   path: 'habilidades',
   loadChildren: () => import('./module/habilidades/habilidades.module').then(m => m.HabilidadesModule),
   },
+  {
+  path: 'educacion',
+  loadChildren: () => import('./module/educacion/educacion.module').then(m => m.EducacionModule),
+  },
+  {
+  path: 'experiencia',
+  loadChildren: () => import('./module/experiencia/experiencia.module').then(m => m.ExperienciaModule),
+  },
+  {
+  path: 'contactame',
+  loadChildren: () => import('./module/contactame/contactame.module').then(m => m.ContactameModule),
+  },
 ];
 
 @NgModule({

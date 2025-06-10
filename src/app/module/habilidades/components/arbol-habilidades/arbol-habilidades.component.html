@@ -1,0 +1,61 @@
+<div class="container">
+  <h2 class="text-center my-5">Mis Habilidades</h2>
+
+  <div class="row">
+    <!-- Lenguajes de Programación -->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          <h4>Lenguajes de Programación</h4>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let lenguaje of lenguajes">{{ lenguaje }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frameworks y Bibliotecas -->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          <h4>Frameworks y Bibliotecas</h4>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let framework of frameworks">{{ framework }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Herramientas y Tecnologías -->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="card-header bg-info text-white">
+          <h4>Herramientas y Tecnologías</h4>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let herramienta of herramientas">{{ herramienta }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diseño y UX/UI -->
+    <div class="col-md-6 col-sm-12 mb-4">
+      <div class="card">
+        <div class="card-header bg-warning text-white">
+          <h4>Diseño y UX/UI</h4>
+        </div>
+        <div class="card-body">
+          <ul>
+            <li *ngFor="let habilidad of diseno">{{ habilidad }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

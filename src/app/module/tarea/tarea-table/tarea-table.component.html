@@ -1,28 +1,15 @@
-<br>
 
-<div class="d-flex justify-content-center align-items-center" style="margin-top: 10vh;">
-  <div class="d-flex flex-column w-100"  class="custom-card mb-4" >
+
+<div class="d-flex justify-content-center align-items-center" >
+  <div class="d-flex flex-column w-100" class="custom-card mb-4">
     <div class="w-100 mb-3">
-      <input
-        type="text"
-        pInputText
-        placeholder="Nueva tarea"
-        [(ngModel)]="nuevaTarea"
-        class="form-control"
-      />
+      <input type="text" pInputText placeholder="Nueva tarea" [(ngModel)]="nuevaTarea" class="form-control" />
     </div>
 
     <!-- Botón Agregar -->
     <div class="w-100 d-flex justify-content-center">
-      <button
-        pButton
-        type="button"
-        label="Agregar"
-        icon="pi pi-plus"
-        (click)="agregarTarea()"
-        class="p-button-success w-auto"
-        style="margin-top: 10px;"
-      ></button>
+      <button pButton type="button" label="Agregar" icon="pi pi-plus" (click)="agregarTarea()"
+        class="p-button-success w-auto" style="margin-top: 10px;"></button>
     </div>
   </div>
 </div>
@@ -31,41 +18,28 @@
 
 <div class="container">
   <div class="row justify-content-center">
-    <p-card
-    display
-    [style]="{ width: '40vh', overflow: 'hidden' }"
-    *ngFor="let tarea of tareas, let i = index"
-    class="custom-card mb-4 col-md-4"
-  >
-    <ng-template pTemplate="header">
-      <img
-        alt="Imagen"
-        class="img"
-        src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png"
-      />
-    </ng-template>
+    <p-card display [style]="{ width: '100%', overflow: 'hidden' }" *ngFor="let tarea of tareas, let i = index"
+      class="custom-card mb-4 col-md-4">
+      <ng-template pTemplate="header">
+        <img alt="Imagen" class="img" src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png" />
+      </ng-template>
 
-    <ng-template pTemplate="title">
-      Tarea #{{ tarea.id }}
-    </ng-template>
+      <ng-template pTemplate="title">
+        Tarea #{{ tarea.id }}
+      </ng-template>
 
-    <ng-template pTemplate="subtitle">
-      {{ tarea.tarea }}
-    </ng-template>
+      <ng-template pTemplate="subtitle">
+        {{ tarea.tarea }}
+      </ng-template>
 
-    <p>{{ tarea.completado ? 'Completada' : 'Pendiente' }}</p>
+      <p>{{ tarea.completado ? 'Completada' : 'Pendiente' }}</p>
 
-    <ng-template pTemplate="footer">
-      <div class="w-full d-flex justify-content-center gap-4 mt-3">
-        <app-tarea-item
-          [tarea]="tarea"
-          (completar)="onCompletarTarea($event)"
-          (eliminar)="onEliminarTarea($event)"
-        >
-        </app-tarea-item>
-      </div>
-    </ng-template>
-  </p-card>
+      <ng-template pTemplate="footer">
+        <div class="w-full d-flex justify-content-center gap-4 mt-3, ">
+          <app-tarea-item [tarea]="tarea" (completar)="onCompletarTarea($event)" (eliminar)="onEliminarTarea($event)">
+          </app-tarea-item>
+        </div>
+      </ng-template>
+    </p-card>
   </div>
 </div>
-

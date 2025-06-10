@@ -1,0 +1,38 @@
+<section id="projects">
+  <h2 class="text-center my-5">Mis Proyectos</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- Itera sobre los proyectos y muestra un card para cada uno -->
+      <p-card *ngFor="let proyecto of proyectos" [header]="proyecto.nombre" [style]="{ width: '100%', overflow: 'hidden' }" class="custom-card mb-4 col-md-4">
+
+        <!-- Imagen del proyecto -->
+        <ng-template pTemplate="header">
+          <img alt="Imagen del Proyecto" class="img custom-card-img" [src]="proyecto.imagen" />
+        </ng-template>
+
+        <!-- Título del proyecto -->
+        <ng-template pTemplate="title">
+          {{ proyecto.nombre }}
+        </ng-template>
+
+        <!-- Descripción del proyecto -->
+        <ng-template pTemplate="subtitle">
+          <p>{{ proyecto.descripcion }}</p>
+        </ng-template>
+
+        <!-- Tecnologías utilizadas -->
+        <p><strong>Tecnologías:</strong> {{ proyecto.tecnologias.join(', ') }}</p>
+
+        <!-- Estado del proyecto -->
+        <p><strong>Estado:</strong> {{ proyecto.estado }}</p>
+
+        <!-- Enlace al proyecto -->
+        <ng-template pTemplate="footer">
+          <div class="w-full d-flex justify-content-center gap-4 mt-3">
+            <a href="{{ proyecto.enlace }}" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
+</section>

@@ -13,6 +13,27 @@
 
 .img {
   display: block; /* Elimina los márgenes por defecto en imágenes */
-  margin:  15px 0px 10px 120px;  /* Top Right Bottom Left */
+  margin:  15px 0px 15px 25%;  /* Top Right Bottom Left */
   width: 50%;
+}
+
+/* Aseguramos que la barra de herramientas ocupe el 100% en pantallas grandes y pequeñas */
+/* Aseguramos que el toolbar se ajuste bien en pantallas pequeñas */
+@media (max-width: 768px) {
+  .p-toolbar {
+    padding: 0.5rem; /* Reducir el padding en pantallas pequeñas */
+  }
+
+  .p-toolbar .d-flex {
+    flex-direction: column; /* Colocar los elementos en columna en pantallas pequeñas */
+  }
+
+  .p-toolbar .p-button {
+    font-size: 0.9rem; /* Reducir el tamaño de fuente de los botones */
+    padding: 0.5rem; /* Reducir el padding de los botones */
+  }
+
+  .p-toolbar svg {
+    width: 1.5rem; /* Reducir el tamaño del ícono */
+  }
 }

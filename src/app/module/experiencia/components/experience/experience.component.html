@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="text-center my-5">Mi Experiencia Profesional</h2>
+
+  <!-- Experiencia Laboral -->
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+      <h4>Industrias Nettalco S.A.</h4>
+      <p><strong>Practicante de TI</strong></p>
+      <p><strong>Desde:</strong> {{ experiencia.fechaInicio }} | <strong>Hasta:</strong> {{ experiencia.fechaFin }}</p>
+    </div>
+    <div class="card-body">
+      <h5>Responsabilidades:</h5>
+      <ul>
+        <li *ngFor="let responsabilidad of experiencia.responsabilidades">{{ responsabilidad }}</li>
+      </ul>
+      <h5>Logros y Contribuciones:</h5>
+      <ul>
+        <li *ngFor="let logro of experiencia.logros">{{ logro }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

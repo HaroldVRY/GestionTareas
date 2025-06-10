@@ -1,0 +1,49 @@
+/* Contenedor principal de los proyectos */
+#projects {
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;        /* Para que los cards se ajusten automáticamente */
+  gap: 20px;              /* Añade espaciado entre cada card */
+  justify-content: center; /* Centra los cards en la fila */
+  padding: 20px;           /* Añade un poco de espacio alrededor */
+}
+.custom-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 30%; /* Ajusta el ancho de los cards según lo desees */
+  margin: 10px; /* Añadir margen a todos los lados del card */
+  margin-bottom: 20px; /* Mantén el margen inferior para separación entre filas */
+  display: inline-block; /* Asegura que los cards se alineen de manera horizontal */
+  box-sizing: border-box; /* Incluye el padding y el border dentro del tamaño del elemento */
+}
+
+
+/* Centrar la imagen en el contenedor */
+.custom-card img {
+  width: 250px; /* Ancho de la imagen */
+  height: 250px; /* Alto de la imagen */
+  object-fit: cover; /* Ajuste para mantener la proporción de la imagen */
+  margin: 0 auto; /* Centrar la imagen dentro del contenedor */
+  display: block; /* Asegura que la imagen se muestre como un bloque (y no inline) */
+  border-radius: 45px; /* Opcional: agrega bordes redondeados */
+  padding: 15px;
+}
+
+/* Estilo de los botones dentro del card */
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}

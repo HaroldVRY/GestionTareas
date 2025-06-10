@@ -1,0 +1,32 @@
+/* Estilo para las tarjetas de experiencia */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-header {
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card-body ul {
+  padding-left: 20px;
+}
+
+.card-body ul li {
+  list-style-type: disc;
+}
+
+.container {
+  margin-top: 50px;
+}

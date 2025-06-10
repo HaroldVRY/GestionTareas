@@ -1,1 +1,57 @@
-<p>education works!</p>
+<div class="container">
+  <h2 class="text-center my-5">Mi Educación</h2>
+
+  <!-- Colegio -->
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+      <h4>Colegio Alfa Group</h4>
+      <p><strong>Secundaria</strong></p>
+      <p><strong>Fechas:</strong> 2016 - 2021</p>
+    </div>
+    <div class="card-body">
+      <p>{{ educacion.colegios[0].descripcion }}</p>
+    </div>
+  </div>
+
+  <!-- Universidad -->
+  <div class="card mb-4">
+    <div class="card-header bg-success text-white">
+      <h4>Universidad Nacional de Ingeniería (UNI)</h4>
+      <p><strong>Carrera:</strong> Ingeniería de Sistemas</p>
+      <p><strong>Ciclo:</strong> 7mo Ciclo</p>
+      <p><strong>Fechas:</strong> 2021 - Actualidad</p>
+    </div>
+    <div class="card-body">
+      <p>{{ educacion.universidad[0].descripcion }}</p>
+    </div>
+  </div>
+
+  <!-- Cursos -->
+  <div class="card mb-4">
+    <div class="card-header bg-info text-white">
+      <h4>Cursos Relevantes</h4>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li *ngFor="let curso of educacion.cursos">
+          <strong>{{ curso.nombre }}:</strong> {{ curso.descripcion }} ({{ curso.fecha }})
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Certificaciones -->
+  <div class="card mb-4">
+    <div class="card-header bg-warning text-white">
+      <h4>Certificaciones</h4>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li *ngFor="let cert of educacion.certificaciones">
+          <strong>{{ cert.nombre }}:</strong>
+          <a [href]="cert.enlace" target="_blank">{{ cert.institucion }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

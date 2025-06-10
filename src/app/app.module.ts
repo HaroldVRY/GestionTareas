@@ -22,7 +22,7 @@ import { SidebarComponent } from './core/components/sidebar/sidebar.component';
 import { DescriptionComponent } from './module/sobre-mi/components/description/description.component';
 import { ProyectCardsComponent } from './module/proyectos/components/proyect-cards/proyect-cards.component';
 import { ArbolHabilidadesComponent } from './module/habilidades/components/arbol-habilidades/arbol-habilidades.component';
-
+import { CoreModule } from './core/core.module';
 
 
 
@@ -36,6 +36,7 @@ import { ArbolHabilidadesComponent } from './module/habilidades/components/arbol
     BrowserModule,
     AppRoutingModule,
     BrowserModule,
+    CoreModule,
     FormsModule,
     TableModule,
     InputTextModule,

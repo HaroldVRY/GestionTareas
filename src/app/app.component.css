@@ -1,0 +1,5 @@
+/* Estilos para que el contenido no se sobreponga al sidebar */
+.content {
+  margin-left: 250px; /* El mismo ancho que el sidebar para que no se solape */
+  padding: 20px;
+}

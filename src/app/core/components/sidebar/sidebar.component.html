@@ -1,1 +1,16 @@
-<div>Sidebar works!</div>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <h3>Menú</h3>
+  </div>
+  <ul class="sidebar-list">
+    <li *ngFor="let item of menuItems">
+      <a *ngIf="item.ruta !== null; else noLink" [routerLink]="item.ruta" routerLinkActive="active">
+        <i class="{{ item.iconRef }}"></i>
+        {{ item.nombre }}
+      </a>
+      <ng-template #noLink>
+        <span><i class="{{ item.iconRef }}"></i> {{ item.nombre }}</span>
+      </ng-template>
+    </li>
+  </ul>
+</div>

@@ -1,5 +1,9 @@
 [build]
-publish = "dist/proyectoangular1"  # Asegúrate de que esta ruta sea la correcta para tu salida de Angular
+  publish = "dist/proyectoangular1"
+  command = "npm run build --if-present"
 
 [build.environment]
-NODE_VERSION = "16"
+  NODE_VERSION = "22.16.0"
+
+[context.production.environment]
+  NODE_VERSION = "22.16.0"

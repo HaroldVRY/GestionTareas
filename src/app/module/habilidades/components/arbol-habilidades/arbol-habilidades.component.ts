@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
 })
 export class ArbolHabilidadesComponent {
   // Sección de lenguajes de programación
-  lenguajes: string[] = ['JavaScript', 'Python', 'PHP', 'TypeScript', 'Java'];
+  lenguajes: string[] = ['JavaScript', 'Python', 'Java', 'TypeScript', 'CSS', 'SQL'];
 
   // Sección de frameworks y bibliotecas
-  frameworks: string[] = ['React', 'Node.js', 'Express', 'Laravel', 'Angular'];
+  frameworks: string[] = ['React', 'Node.js', 'PrimeNG', 'PrimeIcons', 'Bootstrap', 'Angular'];
 
   // Sección de herramientas y tecnologías
-  herramientas: string[] = ['Git', 'Docker', 'MongoDB', 'PostgreSQL', 'MySQL', 'AWS'];
+  herramientas: string[] = ['Git', 'Docker', 'Table Plus', 'PostgreSQL', 'MySQL', 'AWS', 'Postman'];
 
   // Sección de Diseño y UX/UI
-  diseno: string[] = ['Figma', 'Adobe XD', 'Principios de diseño responsivo', 'Wireframes', 'Prototipos'];
+  diseno: string[] = ['Figma','Adobe XD', 'Principios de diseño responsivo', 'Wireframes', 'Prototipos'];
 
 }

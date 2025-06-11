@@ -33,8 +33,15 @@ export class EducationComponent {
         institucion: 'Sistemas UNI',
         descripcion: 'Curso de Excel enfocado en su aplicación para sistemas y manejo de grandes volúmenes de datos.',
         fecha: '2024'
+      },
+      {
+        nombre: 'Inteligencia de Negocio con Excel',
+        institucion: 'CTIC UNI',
+        descripcion: 'Curso de Excel enfocado en el entendimiento de un negocio y sus capacidades de mejora con datos.',
+        fecha: '2024'
       }
     ],
+
     certificaciones: [
       {
         nombre: 'SQL Avanzado',

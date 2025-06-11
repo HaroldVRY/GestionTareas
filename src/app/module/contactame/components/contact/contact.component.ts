@@ -18,16 +18,6 @@ export class ContactComponent {
       nombre: 'GitHub',
       enlace: 'https://github.com/HaroldVRY',
       icono: 'pi pi-github',
-    },
-    {
-      nombre: 'Twitter',
-      enlace: 'https://twitter.com/harold_reyna',
-      icono: 'pi pi-twitter',
-    },
-    {
-      nombre: 'Instagram',
-      enlace: 'https://www.instagram.com/harold.reyna/',
-      icono: 'pi pi-instagram',
     }
   ];
 

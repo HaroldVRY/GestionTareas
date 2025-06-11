@@ -46,33 +46,33 @@ export class ProyectCardsComponent {
       enlace: 'https://github.com/HaroldVRY/Prabstract',
       imagen: 'rpa.png' // Imagen para el proyecto Prabstract
     },
-    {
-      id: 5,
-      nombre: 'Aplicación de Gestión de Tareas',
-      descripcion: 'Una aplicación de tareas con autenticación, para gestionar tareas diarias.',
-      tecnologias: ['React', 'Node.js', 'MongoDB'],
-      estado: 'Completado',
-      enlace: 'https://github.com/haroldreyna/tarea-app',
-      imagen: 'https://via.placeholder.com/200?text=Task+Manager' // Imagen para el proyecto de gestión de tareas
-    },
-    {
-      id: 6,
-      nombre: 'Portal de Blog',
-      descripcion: 'Sistema de blogs con funcionalidad para crear, editar y eliminar entradas.',
-      tecnologias: ['Angular', 'Express.js', 'MongoDB'],
-      estado: 'En progreso',
-      enlace: 'https://github.com/haroldreyna/blog-portal',
-      imagen: 'https://via.placeholder.com/200?text=Blog+Portal' // Imagen para el portal de blog
-    },
-    {
-      id: 7,
-      nombre: 'E-commerce',
-      descripcion: 'Plataforma de e-commerce que permite la compra de productos online.',
-      tecnologias: ['Vue.js', 'Node.js', 'MySQL'],
-      estado: 'En espera',
-      enlace: 'https://github.com/haroldreyna/e-commerce',
-      imagen: 'https://via.placeholder.com/200?text=E-commerce' // Imagen para el proyecto de e-commerce
-    },
+    // {
+    //   id: 5,
+    //   nombre: 'Aplicación de Gestión de Tareas',
+    //   descripcion: 'Una aplicación de tareas con autenticación, para gestionar tareas diarias.',
+    //   tecnologias: ['React', 'Node.js', 'MongoDB'],
+    //   estado: 'Completado',
+    //   enlace: 'https://github.com/haroldreyna/tarea-app',
+    //   imagen: 'https://via.placeholder.com/200?text=Task+Manager' // Imagen para el proyecto de gestión de tareas
+    // },
+    // {
+    //   id: 6,
+    //   nombre: 'Portal de Blog',
+    //   descripcion: 'Sistema de blogs con funcionalidad para crear, editar y eliminar entradas.',
+    //   tecnologias: ['Angular', 'Express.js', 'MongoDB'],
+    //   estado: 'En progreso',
+    //   enlace: 'https://github.com/haroldreyna/blog-portal',
+    //   imagen: 'https://via.placeholder.com/200?text=Blog+Portal' // Imagen para el portal de blog
+    // },
+    // {
+    //   id: 7,
+    //   nombre: 'E-commerce',
+    //   descripcion: 'Plataforma de e-commerce que permite la compra de productos online.',
+    //   tecnologias: ['Vue.js', 'Node.js', 'MySQL'],
+    //   estado: 'En espera',
+    //   enlace: 'https://github.com/haroldreyna/e-commerce',
+    //   imagen: 'https://via.placeholder.com/200?text=E-commerce' // Imagen para el proyecto de e-commerce
+    // },
 
     ];
 }

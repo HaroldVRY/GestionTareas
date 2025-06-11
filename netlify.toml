@@ -1,9 +1,20 @@
 [build]
+  # Especificamos el directorio donde se encuentran los archivos de salida de la compilación
   publish = "dist/proyectoangular1"
-  command = "npm run build --if-present"
+  # El comando para construir el proyecto Angular. Usamos --prod para producción.
+  command = "npm run build --prod"
 
 [build.environment]
+  # Establecemos la versión de Node.js para la construcción del proyecto
   NODE_VERSION = "22.16.0"
 
 [context.production.environment]
+  # Especificamos que se debe usar la misma versión de Node.js en el entorno de producción
   NODE_VERSION = "22.16.0"
+
+[[redirects]]
+  # Aseguramos que todas las rutas se redirijan al index.html para manejar las rutas de la SPA
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true

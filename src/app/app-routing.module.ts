@@ -4,8 +4,7 @@ import { TareaTableComponent } from './module/tarea/tarea-table/tarea-table.comp
 import { SobreMiModule } from './module/sobre-mi/sobre-mi.module';
 
 const routes: Routes = [
-  { path: '', redirectTo:'tarea', pathMatch: 'full'},
-  {path:'tarea', component: TareaTableComponent},
+  { path: '', redirectTo:'sobre-mi', pathMatch: 'full'},
   {
   path: 'sobre-mi',
   loadChildren: () => import('./module/sobre-mi/sobre-mi.module').then(m => m.SobreMiModule),

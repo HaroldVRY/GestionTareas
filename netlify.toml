@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/proyectoangular1"
+  publish = "dist/proyectoangular1/browser"
   command = "npm run build --if-present"
 
 [build.environment]

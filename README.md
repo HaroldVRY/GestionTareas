@@ -1,5 +1,7 @@
 # Aplicación de Gestión de Tareas en Angular
 
+ENLACE: https://portofolio-harold-reyna.netlify.app/#/sobre-mi/sobre-mi
+
 Bienvenido al repositorio de la **Aplicación de Gestión de Tareas**. Esta aplicación web está construida con **Angular**, y permite a los usuarios crear, gestionar y seguir el progreso de sus tareas de forma sencilla y eficiente.
 
 ## Características
